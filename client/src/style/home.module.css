@@ -1,0 +1,125 @@
+.text {
+  max-height: 40rem;
+  min-height: 35rem;
+  width: 75%;
+
+  margin: 0 auto;
+  background-color: #ffff;
+  /* margin-top: 2rem; */
+}
+.btn {
+  /* border: 1px solid #000000; */
+  background-color: #000000;
+  padding: 0;
+  outline-offset: 4px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.front {
+  display: block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  background: #000000;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.btn:active .front {
+  transform: translateY(-2px);
+}
+
+.img {
+  max-height: 600px;
+  /* border: 2px solid blue; */
+  margin: 0 auto;
+}
+
+.imgDiv {
+  position: relative;
+}
+.penDiv i {
+  position: absolute;
+  left: 10rem;
+  top: 18rem;
+}
+
+@media (max-width: 1380px) {
+  .penDiv i {
+    left: 5rem;
+  }
+}
+
+@media (max-width: 1281px) {
+  .text {
+    width: 80%;
+  }
+}
+@media (max-width: 1200px) {
+  .text {
+    width: 90%;
+  }
+  .penDiv i {
+    left: 3rem;
+  }
+}
+@media (max-width: 1024px) {
+  .text {
+    width: 100%;
+  }
+
+  .flex {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 950px) {
+  .flex {
+    flex-direction: column-reverse;
+    padding-left: 1rem;
+  }
+  .textItems,
+  .imgDiv {
+    width: 100%;
+  }
+  .text {
+    width: 85%;
+  }
+  .penDiv i {
+    left: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .penDiv i {
+    left: 3rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .text {
+    width: 100%;
+  }
+  .penDiv i {
+    left: 1rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .penDiv i {
+    top: 15rem;
+  }
+}
+
+@media (max-width: 366px) {
+  .penDiv i {
+    top: 12rem;
+  }
+}
+
+@media (max-width: 290px) {
+  .penDiv i {
+    top: 10rem;
+  }
+}
